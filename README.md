@@ -34,3 +34,11 @@ When logged in as a standard employee, attempting to open the folder results in:
 ### Scenario 2: Administrator Access
 When logged in as a Domain Admin, the folder opens successfully, allowing file creation and deletion.
 **Result:** Success.
+---
+## Key Concepts Learned
+During this lab, I deepened my understanding of several core Identity and Access Management (IAM) principles:
+
+* **Inheritance:** Understanding how permissions flow from a parent folder to sub-folders and how to strategically break that flow to secure sensitive data.
+* **Explicit Permissions:** Learning to set specific "Allow" or "Deny" rules that override inherited settings.
+* **Security Identifiers (SIDs):** Observing how Windows tracks users and groups internally through unique alphanumeric strings.
+* **Least Privilege:** Implementing the security best practice of giving users only the access they absolutely need to perform their jobs.
