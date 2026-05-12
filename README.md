@@ -12,7 +12,7 @@ This lab focuses on the principle of **Least Privilege**. I configured a Windows
 
 ### 1. Creating the Security Group
 I created a specific Security Group to manage who has access to the restricted folder.
-![Creating Security Group](./Screenshots/your-image-name.png)
+![Creating Security Group](./Screenshots/creating-groups.png)
 
 ### 2. Configuring NTFS Permissions
 To secure the folder, I had to break the permission inheritance from the parent drive.
@@ -23,13 +23,13 @@ To secure the folder, I had to break the permission inheritance from the parent 
 
 ### 3. Assigning Explicit Access
 I added the Admin group and granted them **Full Control**, while ensuring no other non-admin users remained in the list.
-![Final Permissions](./Screenshots/your-image-name.png)
+![Final Permissions](./Screenshots/final-permissions.png)
 
 ## Verification & Testing
 ### Scenario 1: Standard User Access
 When logged in as a standard employee, attempting to open the folder results in:
 **Result:** "You don’t currently have permission to access this folder."
-![Access Denied](./Screenshots/your-image-name.png)
+![Access Denied](./Screenshots/access-denied.png)
 
 ### Scenario 2: Administrator Access
 When logged in as a Domain Admin, the folder opens successfully, allowing file creation and deletion.
